@@ -21,6 +21,9 @@ public class Inscripcion {
     @JoinColumn(name = "id_estudiante")
     private Estudiante estudiante;
 
+    @Column(name = "nota_final")
+    private Double notaFinal;
+
     // Default constructor
     public Inscripcion() {
     }
@@ -30,6 +33,7 @@ public class Inscripcion {
         this.fecha = fecha;
         this.curso = curso;
         this.estudiante = estudiante;
+        this.notaFinal = null; // Inicialmente, la nota final es nula
     }
     // Getters and Setters
     public Long getIdInscripcion() {
@@ -55,6 +59,11 @@ public class Inscripcion {
     }
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
-
+    }
+    public Double getNotaFinal() {
+        return notaFinal;
+    }
+    public void setNotaFinal(Double notaFinal) {
+        this.notaFinal = notaFinal;
     }
 }
