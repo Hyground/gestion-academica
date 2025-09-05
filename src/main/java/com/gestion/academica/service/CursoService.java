@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.gestion.academica.dto.CursoDTO;
 import com.gestion.academica.entity.Curso;
-import com.gestion.academica.entity.Profesor;
 import com.gestion.academica.repository.CursoRepository;
 
 @Service
